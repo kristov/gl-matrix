@@ -1,0 +1,6 @@
+Name: gl-matrix
+Description: Library for matrix calculations
+Version: 0.1.0
+Conflicts:
+Libs: -L${pcfiledir} -l:gl-matrix.a
+Cflags: -I${pcfiledir}
