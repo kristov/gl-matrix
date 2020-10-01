@@ -9,11 +9,8 @@ all: $(OBJECTS) gl-matrix.a gl-matrix.h
 %.o: %.c %.h
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-gl-matrix.a: gl-matrix.o
-	ar -crs $@ $<
-
-gl-matrix.o:
-	ld -r $(OBJECTS) -o gl-matrix.o
+gl-matrix.a: $(OBJECTS)
+	ar -crs $@ $(OBJECTS)
 
 gl-matrix.h: $(OBJECTS)
 	cat $(HEADERS) > $@
