@@ -1,4 +1,3 @@
-#ifndef EPSILON_H
-#define EPSILON_H
+#ifndef EPSILON
 #define EPSILON 0.000001
 #endif
